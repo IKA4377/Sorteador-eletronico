@@ -1,0 +1,128 @@
+* {
+  font-family: "Orbitron", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+}
+
+.dice-image {
+  display: block;
+  margin: 40px auto 0;
+  width: 120px;
+}
+
+.rolling {
+  animation: girarDado 0.8s ease;
+}
+
+@keyframes girarDado {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px 0 50px;
+}
+
+.sorteador-box {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 29px;
+}
+
+.inputs-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.min-number,
+.max-number,
+.draw-button {
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 1px solid #555;
+}
+
+.min-number,
+.max-number {
+  text-align: left;
+  padding-left: 12px;
+}
+
+.draw-button {
+  display: block;
+  margin: 30px auto 0;
+  cursor: pointer;
+  background-color: #dfff00;
+  color: #111;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.result-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.result-text {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.result-number {
+  display: block;
+  font-size: 90px;
+  font-weight: bold;
+  color: #f5f500;
+  margin-bottom: 25px;
+}
+
+.again-button {
+  width: 200px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5f500;
+  color: #1a1a1a;
+  font-size: 16px;
+  cursor: pointer;
+}

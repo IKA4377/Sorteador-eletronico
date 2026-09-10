@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Sorteador Eletronico</title>
+</head>
+
+<body>
+    <main>
+        <img src="img/logo.png" alt="Dado" class="dice-image" />
+        <h1>DevSorteio</h1>
+        <div class="sorteador-box">
+            <p class="subtitle">Sortear um número</p>
+            <div class="inputs-box">
+                <label>
+                    <input type="number" class="min-number" placeholder="entre" />
+                </label>
+
+                <label>
+                    <input type="number" class="max-number" placeholder="e" />
+                </label>
+            </div>
+
+            <button class="draw-button">Sortear</button>
+        </div>
+
+        <div class="result-box hidden">
+            <p class="result-text">Número sorteado</p>
+            <span class="result-number">0</span>
+            <button class="again-button">Sortear novamente</button>
+
+            <script src="script.js"></script>
+
+</body>
+
+</html>
